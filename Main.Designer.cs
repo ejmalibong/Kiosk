@@ -30,6 +30,7 @@ namespace Kiosk
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel = new System.Windows.Forms.Panel();
             this.lblLogo = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
@@ -227,7 +228,6 @@ namespace Kiosk
             this.panelOrderingSystem.Size = new System.Drawing.Size(1336, 105);
             this.panelOrderingSystem.TabIndex = 6;
             this.panelOrderingSystem.Visible = false;
-            this.panelOrderingSystem.Click += new System.EventHandler(this.panelOrderingSystem_Click);
             // 
             // lblOrderingSystem
             // 
@@ -240,7 +240,6 @@ namespace Kiosk
             this.lblOrderingSystem.Size = new System.Drawing.Size(570, 78);
             this.lblOrderingSystem.TabIndex = 3;
             this.lblOrderingSystem.Text = "Ordering System";
-            this.lblOrderingSystem.Click += new System.EventHandler(this.lblOrderingSystem_Click);
             // 
             // panelGovs
             // 
@@ -261,8 +260,8 @@ namespace Kiosk
             this.picPagibig.InitialImage = global::Kiosk.Properties.Resources.pag_ibig;
             this.picPagibig.Location = new System.Drawing.Point(816, 1);
             this.picPagibig.Name = "picPagibig";
-            this.picPagibig.Size = new System.Drawing.Size(116, 96);
-            this.picPagibig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPagibig.Size = new System.Drawing.Size(150, 96);
+            this.picPagibig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPagibig.TabIndex = 5;
             this.picPagibig.TabStop = false;
             this.picPagibig.Click += new System.EventHandler(this.picPagibig_Click);
@@ -295,12 +294,14 @@ namespace Kiosk
             this.Controls.Add(this.panel);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kiosk";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
+            this.Load += new System.EventHandler(this.Main_Load);
             this.Resize += new System.EventHandler(this.Main_Resize);
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
