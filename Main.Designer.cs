@@ -227,18 +227,17 @@ namespace Kiosk
             this.panelOrderingSystem.Name = "panelOrderingSystem";
             this.panelOrderingSystem.Size = new System.Drawing.Size(1336, 105);
             this.panelOrderingSystem.TabIndex = 6;
-            this.panelOrderingSystem.Visible = false;
             // 
             // lblOrderingSystem
             // 
             this.lblOrderingSystem.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblOrderingSystem.AutoSize = true;
             this.lblOrderingSystem.Font = new System.Drawing.Font("Arial", 50F, System.Drawing.FontStyle.Bold);
-            this.lblOrderingSystem.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblOrderingSystem.Location = new System.Drawing.Point(382, 10);
+            this.lblOrderingSystem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblOrderingSystem.Location = new System.Drawing.Point(382, 12);
             this.lblOrderingSystem.Name = "lblOrderingSystem";
             this.lblOrderingSystem.Size = new System.Drawing.Size(570, 78);
-            this.lblOrderingSystem.TabIndex = 3;
+            this.lblOrderingSystem.TabIndex = 5;
             this.lblOrderingSystem.Text = "Ordering System";
             // 
             // panelGovs
@@ -337,12 +336,12 @@ namespace Kiosk
         private System.Windows.Forms.Label lblDtr;
         private System.Windows.Forms.Panel panelLoadBalance;
         private System.Windows.Forms.Panel panelOrderingSystem;
-        private System.Windows.Forms.Label lblOrderingSystem;
         private System.Windows.Forms.Panel panelGovs;
         private System.Windows.Forms.PictureBox picPagibig;
         private System.Windows.Forms.PictureBox picSss;
         private System.Windows.Forms.Label lblLoadBalance;
         private System.Windows.Forms.Label lblLogo;
+        private System.Windows.Forms.Label lblOrderingSystem;
     }
 }
 

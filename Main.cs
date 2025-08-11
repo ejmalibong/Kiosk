@@ -115,7 +115,7 @@ namespace Kiosk
         {
             // Get the total available height for the panels
             int availableHeight = this.ClientSize.Height - panel.Height; // Exclude the top panel
-            int panelCount = 5; // Total visible panels
+            int panelCount = 6; // Total visible panels
 
             int panelHeight = availableHeight / panelCount;
 
@@ -124,7 +124,7 @@ namespace Kiosk
             AdjustPanel(panelLeaveApp, lblLeaveApp, panelHeight);
             AdjustPanel(panelDtr, lblDtr, panelHeight);
             AdjustPanel(panelLoadBalance, lblLoadBalance, panelHeight);
-
+            AdjustPanel(panelOrderingSystem, lblOrderingSystem, panelHeight);
             // Adjust panelGovs with picture boxes
             AdjustPanelWithPictures(panelGovs, picSss, picPagibig, panelHeight);
         }
